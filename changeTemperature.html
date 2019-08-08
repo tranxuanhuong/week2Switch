@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="doC">
+
+<input type="button" value="changeTemp" onclick="changeTemperature();">
+<script>
+    function changeTemperature() {
+        let tempC = Number(document.getElementById('doC').value);
+        let tempF = Number(tempC * 9 / 5 + 32);
+        document.write('độ F là ' + tempF);
+    }
+
+</script>
+
+</body>
+</html>

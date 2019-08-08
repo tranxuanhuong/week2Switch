@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a = parseFloat(prompt('nhập độ dài cạnh thứ nhất của tam giác'));
+    let b = parseFloat(prompt('nhập độ dài cạnh thứ 2 của tam giác'));
+    let c = parseFloat(prompt('nhập độ dài cạnh thứ 3 của tam giác'));
+
+    function isTamgiac(a, b, c) {
+        if (a + b < c || a + c < b || b + c < a) {
+            return false;
+        }
+        // return true;
+        alert('đây là tam giác');
+    }
+
+    function isTamgiacDeu(a, b, c) {
+        if (a==b && b==c && a==c){
+            alert('đây là tam giác đều');
+        }
+        return false;
+
+    }
+    function isTamgiacCan(a,b,c) {
+        if (a==b||a==c||b==c){
+            alert('đây là tam giác cân');
+        }
+        return false;
+    }
+    isTamgiac(a,b,c);
+    isTamgiacDeu(a,b,c);
+    isTamgiacCan(a,b,c);
+
+
+</script>
+
+</body>
+</html>

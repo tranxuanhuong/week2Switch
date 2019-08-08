@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =parseInt(prompt('nhập a'));
+    let b=parseInt(prompt('nhập b'));
+    let c=parseInt(prompt('nhập c'));
+    let x1,x2;
+    let delta=parseInt((b*b-4*a*c));
+    if (a==0){
+        x1=x2=parseInt(-c/b);
+        document.write('nghiệm của phương trình là : '+x);
+
+    }else if (a==0 && b==0){
+
+        document.write('phương trình vô nghiệm');
+    }else if (a!=0 && delta>0){
+        x1=(-b+Math.sqrt(delta)/(2*a));
+        x2=(-b-Math.sqrt(delta)/(2*a));
+        document.write('nghiệm của phương trình là :'+ x1+ "và" +x2);
+
+    }else if (a!=0 && delta<0){
+        document.write('phương trình vô nghiệm');
+    }else if (a!=0 && delta==0) {
+        document.write('nghiệm của phương trình là : '+ parseInt(-c/b));
+
+    }else{
+        alert("Đã giải xong");
+    }
+
+
+
+</script>
+</body>
+</html>

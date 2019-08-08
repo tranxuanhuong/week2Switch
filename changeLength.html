@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="feet">
+<input type="button" value="change" onclick="changeLength();">
+<script>
+    function changeLength() {
+        let feeet=Number(document.getElementById('feet').value);
+        let metter=Number(feeet/3.2808);
+        document.write('độ dài là '+ metter +  'm');
+
+    }
+
+</script>
+
+
+</body>
+</html>
